@@ -4,30 +4,118 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/skin.css" type="text/css" />
-	<script type="text/javascript" data-main="js/main" src="js/lib/require.js" defer="defer"></script>
+	<script charset="utf-8" type="text/javascript" data-main="js/main" src="js/lib/require.js"></script>
 </head> 
 <body> 
 
-<div data-role="page">
+<div data-role="page" id="start">
 
-	<div data-role="header">
-		<h1>My Header</h1>
+	<div  id="photoControl" data-role="content">
+  		<button data-theme="d" id="capture">Capture Photo</button>
+  		<button data-theme="d" id="browse">Browse Photos</button> 
+  		<img style="display:none;width:100%;" id="largeImage" src="" /> <br>
 	</div>
 
 	<div data-role="content">
-		<ul data-role="listview" data-inset="true" data-filter="true">
-			<li><a href="#">Acura</a></li>
-			<li><a href="#">Audi</a></li>
-			<li><a href="#">BMW</a></li>
-			<li><a href="#">Cadillac</a></li>
-			<li><a href="#">Ferrari</a></li>
-		</ul>
+
+		<h2>Lorem Ipsum</h2>
+
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<a href="#checkout" data-theme=""><img src="images/camera2.png" height="80" width="80"></a>
+				<span>Step 1:</span>
+				<span>Lorem ipsum sit amet dolor.</span>
+			</div>
+			<div class="ui-block-b">
+				<a href="#checkout" data-theme=""><img src="images/camera2.png" height="80" width="80"></a>
+				<span>Step 2:</span>
+				<span>Lorem ipsum sit amet dolor.</span>
+			</div>	   
+		</div>
+
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<a href="#checkout" data-theme=""><img src="images/camera2.png" height="80" width="80"></a>
+				<span>Step 3:</span>
+				<span>Lorem ipsum sit amet dolor.</span>
+			</div>
+			<div class="ui-block-b">
+				<a href="#checkout" data-theme=""><img src="images/camera2.png" height="80" width="80"></a>
+				<span>Step 4:</span>
+				<span>Lorem ipsum sit amet dolor.</span>
+			</div>	   
+		</div>
+		<a data-inline="true" href="#checkout" data-theme="a" data-icon="forward" data-iconpost="right"data-role="button">Get Started</a>
 	</div>
 
-	<div data-role="footer">
-		<h1>My Footer</h1>
+
+</div>
+
+
+<div data-role="page" id="checkout">
+
+	<div data-role="header">
+		<a href="#start" data-icon="back">Back</a>
+		<h1>Address</h1>
 	</div>
 
+	<div data-role="content">
+
+		<form action="#" method="get">
+
+			<div data-role="fieldcontain">
+				<label for="select-choice-3" class="select">Country</label>
+				<select name="select-choice-3" id="select-choice-3">
+					<option value="SG">Singapore</option>
+					<option value="US">USA</option>
+				</select>
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="name">First Name:</label>
+				<input type="text" name="name" id="name" value=""  />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="name">Last Name:</label>
+				<input type="text" name="name" id="name" value=""  />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="name">Email:</label>
+				<input type="text" name="name" id="name" value=""  />
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="name">Address:</label>
+				<input type="text" name="name" id="name" value=""  />
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="name">City:</label>
+				<select name="select-choice-3" id="select-choice-3">
+					<option value="SG">Singapore</option>
+				</select>
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="name">State:</label>
+				<select name="select-choice-3" id="select-choice-3">
+					<option value="SG">Singapore</option>
+				</select>
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="name">Zip Code:</label>
+				<input type="text" name="name" id="name" value=""  />
+			</div>
+
+
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><a href="#start" data-role="button">Cancel</a></div>
+				<div class="ui-block-b"><button type="submit" data-theme="a">Submit</button></div>
+	    	</fieldset>
+		
+	</form>
+	</div>
 </div>
 
 </body>

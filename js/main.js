@@ -1,8 +1,9 @@
 require.config({
 	baseUrl: 'js',
 	paths: {
-		"jquery": "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min",
+		"jquery": "lib/jquery-1.7.2.min",
 		"mobile": "lib/jquery.mobile-1.1.1",
+		"cordova": "lib/cordova-2.0.0",
 		"underscore": "lib/underscore",
 		"backbone": "lib/backbone",
 	},
@@ -16,10 +17,11 @@ require([
 	'app',
 	'jquery',
 	'mobile',
+	'cordova',
 	'underscore',
 	'backbone'
 	], 
-	function(App){
+	function(App){ 
 		//start the app
-//		App.initialize();
+		App.initialize();
 });

@@ -3,7 +3,6 @@ define([
 	'underscore',
 	'backbone'
 ], function($, _, Backbone) {
-	console.log(arguments);
 	var AppRouter = Backbone.Router.extend({
 		routes: {
 			'': 'start'

@@ -1,0 +1,41 @@
+body {
+    background: url(../images/bg.png) !important;
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+    font-size: Tahoma;
+}
+
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
+
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+.ui-content > h2 {
+	font-style: italic;
+	text-align: center;
+}
+
+
+.ui-content > a {
+	float: right;
+}
+
+
+.ui-grid-a > div {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.ui-grid-a span {
+	font-size: 11px;
+	display: block;
+	font-weight: bold;
+}

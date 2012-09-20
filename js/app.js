@@ -1,10 +1,11 @@
 define([
 	'jquery',
-	'underscore',
-	'backbone',
-	'router'
+	'router',
+	'component/camera',
+	'view/photo'
 	],
-	function($, _, Backbone, Router) {
+	function($, Router, Camera) {
+
 		var initialize = function() {
 			Router.initialize();
 		}
