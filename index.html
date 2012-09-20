@@ -5,15 +5,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/skin.css" type="text/css" />
-		<script charset="utf-8" type="text/javascript" data-main="js/main" src="js/lib/require.js"></script>
+		<script type="text/javascript" data-main="js/main" src="js/lib/require.js"></script>
 	</head> 
 <body> 
 
 <div data-role="page" id="start">
 
 	<div  id="photoControl" data-role="content">
-  		<button data-theme="d" id="capture">Capture Photo</button>
-  		<button data-theme="d" id="browse">Browse Photos</button> 
+  		<button id="capture">Capture Photo</button>
+  		<button id="browse">Browse Photos</button> 
   		<img style="display:none;width:100%;" id="largeImage" src="" /> <br>
 	</div>
 
@@ -48,7 +48,6 @@
 		</div>
 		<a data-inline="true" href="#checkout" data-theme="a" data-icon="forward" data-iconpost="right"data-role="button">Get Started</a>
 	</div>
-
 
 </div>
 
